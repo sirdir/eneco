@@ -3,3 +3,4 @@ export * from './createComment';
 export * from './createPost';
 export * from './createTodo';
 export * from './createUser';
+export * from './toLocaleDateString';
