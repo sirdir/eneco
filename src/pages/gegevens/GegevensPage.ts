@@ -49,7 +49,6 @@ export class GegevensPage {
     await this.deliveryDate.evaluate((element, value) => {
       element.setAttribute('value', value);
     }, date);
-    // await this.deliveryDate.fill(date);
     await this.nextButton.click();
   }
 
@@ -97,9 +96,6 @@ export class GegevensPage {
     if ((await this.partnerAds.isChecked()) !== partnerAds) {
       await this.partnerAds.locator('xpath=..').click();
     }
-    // await this.relevantInfo.setChecked(relevantInfo);
-    // await this.sendByPhone.setChecked(sendByPhone);
-    // await this.partnerAds.setChecked(partnerAds);
     await this.checkYourOrder.click();
   }
 }
